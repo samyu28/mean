@@ -1,0 +1,21 @@
+<div class="content-fluid">
+  <div class="sidebar" >
+      <div class="sidebar__header">
+          <div class="sidebar__header-title">Vodacom POC</div>
+      </div>
+      <ul>
+          <li class="sidebar__item"><a [routerLink]="['/catalog']">CATALOG</a></li>
+          <li class="sidebar__item"><a [routerLink]="['/orders']">ORDERS</a></li>
+          <li class="sidebar__item"><a [routerLink]="['/tasks']">TASKS</a></li>
+          <li class="sidebar__item"><a href="">SERVICES</a></li>
+          
+      </ul>
+  </div>
+  <main>
+      
+<div class="content">
+      <router-outlet></router-outlet>
+    </div>
+      
+  </main>
+</div>

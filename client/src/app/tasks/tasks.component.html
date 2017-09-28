@@ -1,0 +1,61 @@
+
+  
+  
+  <div class="container">
+      
+              
+      
+                  <p-dialog header="L3VPN" [(visible)]="display" modal="modal" width="300" [responsive]="true">
+                          <div *ngFor="let event of taskList">
+                                 
+                                  <span class="ui-float-label">
+                                          <input id="float-input" type="text" size="30" pInputText> 
+                                          <label for="float-input">{{event.title}}</label>
+                                      </span>
+                              </div>  
+                              <p-footer>
+                                  <button type="button" pButton icon="fa-check" (click)="display=false" label="OK"></button>
+                                  
+                              </p-footer>
+                      </p-dialog>
+                      
+                     
+            
+      
+            <div class="section">
+                <h1>Dashboard with Sidebar</h1>
+                <p>Requires the Standard Package</p>
+            </div>
+            <div class="container">
+            <div class="row base-margin-top"> 
+                <div class="col-md-3 text-center"><a (click)="showDialog()">
+                    <img class="thumb thumb--huge thumb--reflected" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                    <h4 class="text-bold base-margin-top">Label 1</h4>
+                    <p>Description</p></a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="thumb thumb--huge thumb--reflected" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                    <h4 class="text-bold base-margin-top">Label 2</h4>
+                    <p>Description</p>
+                </div>
+              </div>
+              <div class="container">
+                      <div class="row base-margin-top">
+                <div class="col-md-3 text-center">
+                    <img class="thumb thumb--huge thumb--reflected" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                    <h4 class="text-bold base-margin-top">Label 3</h4>
+                    <p>Description</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="thumb thumb--huge thumb--reflected" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                    <h4 class="text-bold base-margin-top">Label 4</h4>
+                    <p>Description</p>
+                </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+      
+        
+      
+      
